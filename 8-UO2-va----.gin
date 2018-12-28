@@ -1,0 +1,52 @@
+regi prop dist opti comp conp defect
+
+title
+Uranium dioxide simulations
+end
+
+#lattice parameters
+cell
+5.4682 5.4682 5.4682 90.0 90.0 90.0
+
+fractional
+U core 0.00 0.00 0.00
+U shel 0.00 0.00 0.00
+O core 0.25 0.25 0.25
+O shel 0.25 0.25 0.25
+
+space
+225
+species
+U core -2.51
+U shel  6.51
+O core  2.40
+O shel -4.40
+#I literally copied page 1 man
+
+buck
+U shel O shel 1027.5967 0.402616 0.0 0.0 15.0
+buck4
+O shel O shel 11272.6 0.1363 134.0 0.0 1.2 2.1 2.6 15.0
+
+spring
+U 110.75343
+O 296.2
+
+cutd 4.0
+#To run this file use nohup /home/compchem/bin/gulp ..
+#Lattice energy: energy required by the ideal gas atoms to come together and form the lattice.
+#defect energies:
+vacancy 0.20 0.20 0.20 fix
+interstitial 0.01 #it doesn't relax it; but it'll keep the interstitial.
+#For the Littleton sphere, centre can (in theory) be different from the vacancy.
+centre 0.25 0.25 0.25
+size 14.0 28.0
+
+#Wait is there a net charge in the lattice?
+#The UO2 ceramics captures the U and fission products using its empty space; but Magnox fuel (metallic) will have it's fission product going into the Mg clad instead.
+
+#Gonna do the Schocttky defect to see its formation energy
+#Bining energy.
+
+#Does the
+#If so it will be the programmer who's deciding where to put the va?

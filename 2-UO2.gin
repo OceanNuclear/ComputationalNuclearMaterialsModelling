@@ -1,0 +1,37 @@
+regi prop dist opti comp conp #spline
+
+title
+Uranium dioxide simulations
+end
+
+#lattice parameters
+cell
+5.4682 5.4682 5.4682 90.0 90.0 90.0
+
+fractional
+U core 0.00 0.00 0.00
+U shel 0.00 0.00 0.00
+O core 0.25 0.25 0.25
+O shel 0.25 0.25 0.25
+
+space
+225
+species
+U core -2.51
+U shel  6.51
+O core  2.40
+O shel -4.40
+#I literally copied page 1 man
+
+buck
+U shel O shel 1027.5967 0.402616 0.0 0.0 15.0
+buck4
+O shel O shel 11272.6 0.1363 134.0 0.0 1.2 2.1 2.6 15.0
+
+spring
+U 110.75343
+O 296.2
+
+cutd 4.0
+#To run this file use nohup /home/compchem/bin/gulp ..
+#Lattice energy: energy required by the ideal gas atoms to come together and form the lattice.
